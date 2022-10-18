@@ -1,0 +1,59 @@
+@import url(../css/markup.css);
+@import url(../css/fonts.css);
+
+.markup-link a {
+    position: fixed;
+    width: 60px;
+    height: 30px;
+    left: 20px;
+    bottom: 20px;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+span.navbar-toggler-icon {
+    width: 24px;
+    height: 16px;
+}
+
+.collapse.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    margin-right: 110px;
+    position: relative;
+}
+
+.navbar-nav .nav-item a {
+    color: black;
+    font-family: Oswald;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 26px;
+    text-transform: uppercase;
+    margin-left: 34px;
+}
+
+.nav-item a:hover::before {
+   content: "";
+   width: 100%;
+   max-width: 170px;
+   background-color: #68B738;
+   height: 2px;
+   position: absolute;
+   top: 70px;
+}
+
+footer {
+    background-color: #68B738;
+    height: 15vh;
+    margin-top: 50%;
+}

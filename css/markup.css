@@ -193,3 +193,19 @@ input[type="radio"]:checked + label::before {
     color: #ffffff4d;
     border: none;
 }
+
+.index-link a {
+    position: fixed;
+    width: 60px;
+    height: 30px;
+    left: 20px;
+    bottom: 20px;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
