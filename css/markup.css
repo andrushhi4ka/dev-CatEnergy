@@ -173,3 +173,23 @@ input[type="radio"]:checked + label::before {
     content: "";
     background: url(../img/radiobutton.svg) center/18px no-repeat;
 }    
+
+.button .green-button {
+    background-color: #68B738;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    font-family: Oswald;
+    font-size: 20px;
+    padding: 12.5px 26px;
+}
+
+.button .green-button:hover {
+    background-color: #5EAA2F;
+}
+
+.button .green-button:active {
+    background-color: #5EAA2F;
+    color: #ffffff4d;
+    border: none;
+}
