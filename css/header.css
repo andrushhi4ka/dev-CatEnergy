@@ -1,0 +1,94 @@
+.markup-link a {
+    position: fixed;
+    width: 60px;
+    height: 30px;
+    left: 20px;
+    bottom: 20px;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.navbar-brand {
+    margin-left: 30px;
+}
+
+.navbar-toggler {
+    border: none;
+    z-index: 1;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+header .navbar-toggler {
+    position: relative;
+    width: 24px;
+    height: 16px;
+}
+
+header span {
+    background-color: #000;
+    display: block;
+    margin-top: 8px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    transition: .7s;
+}
+
+header span:nth-child(2) {
+    top: 50%;
+}
+
+header span:nth-child(3) {
+    top: 100%;
+}
+
+header .navbar-toggler[aria-expanded="true"] span {
+    transform: rotate(45deg);
+}
+
+header .navbar-toggler[aria-expanded="true"] span:nth-child(2) {
+    transform: rotate(-45deg);
+    translate: 0px -7px;
+}
+
+header .navbar-toggler[aria-expanded="true"] span:nth-child(3) {
+    transform: rotate(-45deg);
+    translate: 0px -7px;
+    opacity: 0;
+}
+
+.collapse.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    margin-right: 110px;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-nav .nav-item a {
+    color: #fff;
+    font-family: Oswald;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 26px;
+    text-transform: uppercase;
+    margin-left: 34px;
+}
+
+.nav-item a:hover {
+   text-decoration: underline;
+}

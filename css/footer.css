@@ -1,0 +1,7 @@
+footer {
+    height: 50px;
+    background-color: #68B738;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+}
