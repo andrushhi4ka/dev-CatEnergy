@@ -8,7 +8,7 @@
 
 .first-screen::before {
     content: "";
-    background: url(../img/index-bg-before.png);
+    background: url(../img/index-bg-before.png) no-repeat;
     position: absolute;
     width: 50vw;
     top: 0;
