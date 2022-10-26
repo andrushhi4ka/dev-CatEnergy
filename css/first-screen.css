@@ -3,7 +3,11 @@
     margin-top: -111px;
     background: url(../img/first-screen-bg.png) calc(50% + 114px) 163px no-repeat;
     position: relative;
-    min-height: 720px;
+    margin-bottom: 82px;
+}
+
+.first-screen .container {
+    min-height: 470px;
 }
 
 .first-screen::before {
@@ -27,11 +31,11 @@
 }
 
 .first-screen a.btn.btn-primary {
-    background-color: #68B738;
+    background-color: #68b738;
     border: none;
     border-radius: 0;
     padding: 14px 26px;
-    font-family: 'Oswald';
+    font-family: "Oswald";
     font-size: 20px;
     text-transform: uppercase;
 }

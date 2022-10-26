@@ -1,5 +1,121 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 991px) {
+    .navbar-brand img {
+        height: 37px;
+    }
+
+    .navbar-brand {
+        padding: 0;
+    }
+
+    .navbar-nav {
+        margin: auto;
+    }
+
+    .container-fluid {
+        padding: 11px 8px 17px;
+    }
+    
+    header span {
+        margin-top: 2px;
+    }
+
     .navbar-nav .nav-item a {
+        margin-top: 0px;
         color: #000;
+        padding: 0px;
+    }
+
+    .first-screen {
+        padding-top: 27px;
+        margin-top: 0;
+        margin-bottom: 175px;
+        background: none;
+    }
+
+    .first-screen::after {
+        content: "";
+        background: url(../img/first-screen-bg.png) center/contain no-repeat;
+        width: 280px;
+        height: 270px;
+        position: absolute;
+        top: 163px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .first-screen .container {
+        padding: 0 35px;
+        min-height: 305px;
+    }
+
+    .first-screen::before {
+        content: "";
+        background: url(../img/index-bg-before.png) center/cover no-repeat;
+        width: 100vw;
+    }
+
+    .first-screen h1 {
+        color: #fff;
+        text-align: center;
+        margin: 0 auto 25px;
+        font-size: 36px;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+    .first-screen h4 {
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+    .first-screen .btn {
+        position: absolute;
+        bottom: -175px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    header .navbar .navbar-nav {
+        padding: 36px 15px 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    .category-item {
+        padding: 22px 20px;
+        position: relative;
+    }
+
+    .category-item::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        background-color: #D9D9D9;
+        height: 1px;
+        bottom: 63px;
+    }
+
+    .category-item h2 {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 22px;
+    }
+
+    .category-item-description {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 42px;
+    }
+
+    .category-item-description a {
+        font-size: 16px;
+        line-height: 1;
     }
 }
