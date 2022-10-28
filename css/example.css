@@ -1,0 +1,185 @@
+.example-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.example-title {
+    font-family: "Oswald";
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 70px;
+    padding-bottom: 76px;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.example-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    width: 200vw;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.example-options {
+    max-width: 436px;
+}
+
+.example-options-description {
+    font-family: "Arial";
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 69px;
+}
+
+.example-options-parametres {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.example-options-parametres-item {
+    min-width: 162px;
+    font-family: "Oswald";
+    font-size: 30px;
+    line-height: 37px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    padding: 15px 0 20px;
+}
+
+.example-options-parametres-item span {
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 1;
+    margin: 0 auto -27px;
+    padding: 11px 9px 0;
+    color: #444444;
+    background-color: #f2f2f2;
+}
+
+.example-options-total {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Oswald";
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 75px;
+    padding-right: 50px;
+}
+
+.example-slider {
+    position: relative;
+    width: 565px;
+    height: 340px;
+}
+
+/* Our normalize css */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Our wrapper */
+.wrapper {
+    width: 500px;
+    height: 270px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate3d(-50%, -50%, 0);
+    overflow: hidden;
+}
+
+/* Our image information */
+.before,
+.after {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.content-image {
+    height: 100%;
+}
+
+.after {
+    width: 125px;
+}
+
+.scroller {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.scroller:hover {
+    opacity: 1;
+}
+
+.scrolling {
+    pointer-events: none;
+    opacity: 1;
+    z-index: 1;
+}
+
+.scroller__thumb {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.scroller:before,
+.scroller:after {
+    content: " ";
+    display: block;
+    width: 7px;
+    height: 9999px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3.5px;
+    z-index: 30;
+    transition: 0.1s;
+}
+
+.scroller:before {
+    top: 100%;
+}
+
+.scroller:after {
+    bottom: 100%;
+}
+
+/* If you want to cahnge the colors, make sure you change the fill in the svgs to match */
+.scroller {
+    border: 5px solid #fff;
+}
+
+.scroller:before,
+.scroller:after {
+    background: #fff;
+}

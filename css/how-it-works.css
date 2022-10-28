@@ -1,0 +1,66 @@
+.how-it-works-title {
+    font-family: "Oswald";
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 72px;
+}
+
+.how-it-works-item {
+    max-width: 245px;
+    margin-bottom: 35px;
+    position: relative;
+    padding: 0;
+    z-index: 1;
+}
+
+.how-it-works-item-icon-box {
+    width: 80px;
+    height: 80px;
+    background: no-repeat center #68b738 ;
+    margin-bottom: 31px;
+}
+
+.how-it-works-item-description {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.how-it-works ol {
+    counter-reset: li;
+    list-style: none;
+}
+
+.how-it-works ol li:before {
+    content: counter(li, decimal) "";
+    counter-increment: li;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 1;
+    color: #F2F2F2;
+    font-family: "Oswald";
+    position: absolute;
+    top: -40px;
+    left: 95px;
+    z-index: -1;
+}
+
+.icon-leaf {
+    background-image: url(../img/icon-leaf.png);
+}
+
+.icon-tub {
+    background-image: url(../img/icon-tub.png);
+}
+
+.icon-eat {
+    background-image: url(../img/icon-eat.png);
+}
+
+.icon-alarm {
+    background-image: url(../img/icon-alarm.png);
+}
+
+.how-it-works {
+    margin-bottom: 72px;
+}
