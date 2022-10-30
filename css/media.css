@@ -118,4 +118,124 @@
         font-size: 16px;
         line-height: 1;
     }
+
+    .how-it-works-title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .how-it-works-item {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .how-it-works-item-icon-box {
+        min-width: 60px;
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    .how-it-works-item-description {
+        width: 100%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .how-it-works ol {
+        padding-left: 0;
+    }
+
+    .how-it-works ol li:before {
+        display: none;
+    }
+
+    .example {
+        margin-bottom: 60px;
+    }
+
+    .example-row {
+        flex-direction: column;
+    }
+
+    .example-title {
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 33px;
+        padding-bottom: 0px;
+    }
+
+    .example-options {
+        margin-bottom: 42px;
+    }
+
+    .example-options-description {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 25px;
+    }
+
+    .example-options-parametres {
+        margin-bottom: 34px;
+    }
+
+    .example-options-total {
+        justify-content: center;
+    }
+
+    .example-slider {
+        margin-bottom: 72px;
+        margin-top: -130px;
+    }
+
+    .example-slider-wrapper {
+        max-width: 300px;
+        height: 269px;
+        margin-left: auto;
+        position: absolute;
+        left: 40%;
+        top: 150px;
+        transform: translate3d(-50%, -50%, 0);
+        z-index: 1;
+    }
+
+    .example-slider-description {
+        font-size: 16px;
+        width: 50%;
+        margin: auto auto 18px;
+    }
+
+    .example .scroller {
+        top: calc(100% + 20px);
+    }
+
+    .map {
+        width: 320px;
+        height: 362px;
+    }
+
+    .map-description {
+        top: -114px;
+        height: 114px;
+        width: 320px;
+        left: 20px;
+    }
+
+    footer {
+        height: 158px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        justify-content: initial;
+        padding: 0;
+    }
+
+    .footer-logo {
+        margin: 40px auto 57px;
+    }
 }

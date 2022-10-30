@@ -1,3 +1,7 @@
+.example {
+    overflow: hidden;
+}
+
 .example-row {
     display: flex;
     justify-content: space-between;
@@ -78,57 +82,71 @@
 
 .example-slider {
     position: relative;
-    width: 565px;
-    height: 340px;
+    width: 400px;
+    height: 330px;
+    display: flex;
+    margin-top: 9px;
 }
-
-/* Our normalize css */
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/* Our wrapper */
-.wrapper {
-    width: 500px;
-    height: 270px;
+.example-slider-wrapper {
+    width: 400px;
+    height: 330px;
+    margin-left: auto;
     position: absolute;
     left: 50%;
     top: 30%;
     transform: translate3d(-50%, -50%, 0);
-    overflow: hidden;
+    z-index: 1;
 }
-
-/* Our image information */
-.before,
-.after {
+.example-slider-description {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Oswald;
+    text-transform: uppercase;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto auto 8px;
+    position: relative;
+    z-index: 0;
+}
+.example-slider-description::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 6px;
+    border-radius: 6px;
+    background: #dcdcdc;
+    margin-top: 19px;
+}
+.example-slider-description div:first-child {
+    margin-left: -66px;
+}
+.example-slider-description div:last-child {
+    margin-right: -66px;
+}
+.example .before, .example .after {
     width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-color: white;
-    background-size: cover;
-    background-position: center;
+    background: center/cover no-repeat #f2f2f2;
     position: absolute;
     top: 0;
     left: 0;
     pointer-events: none;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
-
-.content-image {
-    height: 100%;
+.example .content-image {
+    max-width: 400px;
 }
-
-.after {
-    width: 125px;
-}
-
-.scroller {
-    width: 50px;
-    height: 50px;
+.example .scroller {
+    width: 40px;
+    height: 40px;
     position: absolute;
     left: 100px;
-    top: 50%;
+    top: calc(100% + 52px);
     transform: translateY(-50%);
     border-radius: 50%;
     background-color: transparent;
@@ -136,50 +154,10 @@
     pointer-events: auto;
     cursor: pointer;
 }
-
-.scroller:hover {
+.example .scroller:hover {
     opacity: 1;
 }
-
-.scrolling {
-    pointer-events: none;
-    opacity: 1;
-    z-index: 1;
-}
-
-.scroller__thumb {
+.example .scroller__thumb {
     width: 100%;
     height: 100%;
-    padding: 5px;
-}
-
-.scroller:before,
-.scroller:after {
-    content: " ";
-    display: block;
-    width: 7px;
-    height: 9999px;
-    position: absolute;
-    left: 50%;
-    margin-left: -3.5px;
-    z-index: 30;
-    transition: 0.1s;
-}
-
-.scroller:before {
-    top: 100%;
-}
-
-.scroller:after {
-    bottom: 100%;
-}
-
-/* If you want to cahnge the colors, make sure you change the fill in the svgs to match */
-.scroller {
-    border: 5px solid #fff;
-}
-
-.scroller:before,
-.scroller:after {
-    background: #fff;
 }

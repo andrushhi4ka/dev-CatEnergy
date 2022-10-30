@@ -1,6 +1,29 @@
 footer {
-    height: 50px;
-    background-color: #68B738;
+    height: 150px;
+    background-color: #f2f2f2;
     margin-top: auto;
     width: 100%;
+}
+
+footer .container {
+    margin-top: 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100vw;
+    margin-left: 0;
+    padding-right: calc(50vw - 89px);
+    width: 100%;
+    height: 100%;
+}
+
+.social-media {
+    width: 126px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 128px;
+    margin-left: 110px;
 }
