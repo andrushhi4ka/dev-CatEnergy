@@ -6,7 +6,6 @@ footer {
 }
 
 footer .container {
-    margin-top: 63px;
     display: flex;
     justify-content: space-between;
     align-items: center;

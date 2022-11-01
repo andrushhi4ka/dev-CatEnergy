@@ -141,7 +141,6 @@ input[type="radio"] + label {
     font-family: Oswald;
     cursor: pointer;
     text-transform: uppercase;
-    margin-bottom: 13px;
 }
 
 input[type="checkbox"] + label::before {
@@ -177,7 +176,7 @@ input[type="radio"]:checked + label::before {
     background: url(../img/radiobutton.svg) center/18px no-repeat;
 }
 
-.button .green-button {
+.btn {
     background-color: #68b738;
     text-transform: uppercase;
     color: #ffffff;
@@ -187,11 +186,11 @@ input[type="radio"]:checked + label::before {
     padding: 12.5px 26px;
 }
 
-.button .green-button:hover {
-    background-color: #5eaa2f;
+.btn:hover {
+    background-color: #5eaa2f !important; 
 }
 
-.button .green-button:active {
+.btn:active {
     background-color: #5eaa2f;
     color: #ffffff4d;
     border: none;

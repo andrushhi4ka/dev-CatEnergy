@@ -79,8 +79,18 @@ header .navbar-toggler[aria-expanded="true"] span:nth-child(3) {
     z-index: 1;
 }
 
-.navbar-nav .nav-item a {
+.homepage .navbar-nav .nav-item a {
     color: #fff;
+    font-family: Oswald;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 26px;
+    text-transform: uppercase;
+    margin-left: 34px;
+}
+
+.formpage .navbar-nav .nav-item a {
+    color: #111111;
     font-family: Oswald;
     font-size: 20px;
     line-height: 1.5;

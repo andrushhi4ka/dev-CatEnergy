@@ -1,0 +1,239 @@
+.form .container {
+    padding: 0;
+}
+
+.form-title {
+    margin: 74px 0 56px;
+}
+
+.title-description {
+    margin: 0 0 66px;
+    width: 323px;
+}
+
+.row-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 69px;
+}
+
+.info-cat {
+    margin-right: 80px;
+}
+
+.info-cat .label-input {
+    display: flex;
+    align-items: center;
+    width: 569px;
+    margin-bottom: 20px;
+}
+
+.info-cat .label-input:last-child {
+    margin-bottom: 0;
+}
+
+.info-cat .label-input label {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #444444;
+    font-family: "Oswald";
+    margin-right: 14px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.info-cat .label-input input {
+    width: 100%;
+    height: 52px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #444444;
+    font-family: "Oswald";
+    padding: 10px 0 11px 19px;
+    border: 1px solid #E7E7E7;
+}
+
+.requirement {
+    width: 100%;
+    padding: 25px 0 25px 28px;
+    border: 1px solid #E7E7E7;
+}
+
+.requirement .label-input {
+    margin-bottom: 13px;
+}
+
+.requirement .label-input label {
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #222222;
+    font-family: "Oswald";
+    white-space: nowrap;
+}
+
+.contacts {
+    margin-bottom: 67px;
+}
+
+.contact-title {
+    margin-bottom: 76px;
+}
+
+.contact-title span,
+.customer-comments-title span,
+.additionally-title span {
+    position: relative;
+    background: #FFFFFF;
+    padding: 0 40px;
+    margin-left: -40px;
+}
+
+.contact-title span::before,
+.customer-comments-title span::before,
+.additionally-title span::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: -100vw;
+    width: 200vw;
+    height: 2px;
+    background: #68B738;
+    z-index: -1;
+}
+
+.contact-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.email, .tel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.email {
+    max-width: 569px;
+    margin-right: 78px;
+}
+
+.email::before {
+    content: "";
+    background: url(../img/contact-email-before.svg) no-repeat center;
+    position: absolute;
+    top: 19px;
+    right: 23px;
+    width: 18px;
+    height: 13px;
+}
+
+.tel {
+    max-width: 572px;
+}
+
+.tel::before {
+    content: "";
+    background: url(../img/contact-phone-before.svg) no-repeat center;
+    position: absolute;
+    top: 19px;
+    right: 23px;
+    width: 20px;
+    height: 20px;
+}
+
+.email label, .tel label {
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #444444;
+    font-family: "Oswald";
+    white-space: nowrap;
+}
+
+.email label {
+    margin-right: 20px;
+    width: 100%;
+    min-width: 63px;
+    max-width: 63px;
+}
+
+.tel label {
+    margin-right: 15px;
+}
+
+.email input, .tel input {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #444444;
+    font-family: "Oswald";
+    padding: 10px 0 10px 19px;
+    border: 1px solid #E7E7E7;
+}
+
+.email input {
+    width: 486px;
+}
+
+.tel input {
+    width: 100%;
+}
+
+.customer-comments-title {
+    margin-bottom: 76px;
+}
+
+.customer-comments textarea {
+    width: 100%;
+    height: 174px;
+    text-transform: uppercase;
+    padding: 10px 19px;
+    border: 1px solid #E7E7E7;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #444444;
+    font-family: "Oswald";
+}
+
+.additionally-title {
+    margin-bottom: 57px;
+}
+
+.check-box-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.check-box-items {
+    margin-bottom: 61px;
+}
+
+.check-box label {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    color: #000;
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 82px;
+}
+
+.submit-button .btn {
+    border-radius: 0;
+    margin: 0;
+    padding: 13px 265px;
+    margin-right: 81px
+}
+
+.submit-button p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "Arial";
+}
